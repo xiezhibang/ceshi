@@ -1,0 +1,126 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
+class FiscalChargesTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('fiscal_charges')->insert([
+            [
+                'user_id' => 1,
+                'username' => '西狂',
+                'account' => '13588909756',
+                'order_no' => date('YmdHis').rand(10000,99999),
+                'name' => '第一味店铺',
+                'order_money' => 32,
+                'money' => 31.9,
+                'commission_price' => 0.1,
+                'status' => 1,
+                'type' => 1,
+                'cash_id' => 1,
+                'bank_name' => '工商银行',
+                'bank_user_name' => '杨过',
+                'bank_no' => date('YmdHis').rand(1000,999),
+                'created_at'=>date('Y-m-d H:i:s'),
+                'updated_at'=>date('Y-m-d H:i:s'),
+            ],
+            [
+                'user_id' => 1,
+                'username' => '西狂',
+                'account' => '13588909756',
+                'order_no' => date('YmdHis').rand(10000,99999),
+                'name' => '第一味店铺',
+                'order_money' => 100,
+                'money' => 100,
+                'commission_price' => 0,
+                'status' => 2,
+                'type' => 2,
+                'cash_id' => 0,
+                'bank_name' => '',
+                'bank_user_name' => '',
+                'bank_no' => '',
+                'created_at'=>date('Y-m-d H:i:s'),
+                'updated_at'=>date('Y-m-d H:i:s'),
+            ],
+            [
+                'user_id' => 1,
+                'username' => '西狂',
+                'account' => '13588909756',
+                'order_no' => date('YmdHis').rand(10000,99999),
+                'name' => '第一味店铺',
+                'order_money' => 100,
+                'money' => 100,
+                'commission_price' => 0,
+                'status' => 1,
+                'type' => 4,
+                'cash_id' => 0,
+                'bank_name' => '',
+                'bank_user_name' => '',
+                'bank_no' => '',
+                'created_at'=>date('Y-m-d H:i:s'),
+                'updated_at'=>date('Y-m-d H:i:s'),
+            ],
+            [
+                'user_id' => 1,
+                'username' => '西狂',
+                'account' => '13588909756',
+                'order_no' => date('YmdHis').rand(10000,99999),
+                'name' => '第一味店铺',
+                'order_money' => 200,
+                'money' => 200,
+                'commission_price' => 0,
+                'status' => 2,
+                'type' => 3,
+                'cash_id' => 0,
+                'bank_name' => '',
+                'bank_user_name' => '',
+                'bank_no' => '',
+                'created_at'=>date('Y-m-d H:i:s'),
+                'updated_at'=>date('Y-m-d H:i:s'),
+            ],
+            [
+                'user_id' => 1,
+                'username' => '西狂',
+                'account' => '13588909756',
+                'order_no' => date('YmdHis').rand(10000,99999),
+                'name' => '第一味店铺',
+                'order_money' => 99,
+                'money' => 99,
+                'commission_price' => 0,
+                'status' => 2,
+                'type' => 5,
+                'cash_id' => 0,
+                'bank_name' => '',
+                'bank_user_name' => '',
+                'bank_no' => '',
+                'created_at'=>date('Y-m-d H:i:s'),
+                'updated_at'=>date('Y-m-d H:i:s'),
+            ],
+            [
+                'user_id' => 1,
+                'username' => '西狂',
+                'account' => '13588909756',
+                'order_no' => date('YmdHis').rand(10000,99999),
+                'name' => '第一味店铺',
+                'order_money' => 1000,
+                'money' => 1000,
+                'commission_price' => 0,
+                'status' => 2,
+                'type' => 6,
+                'cash_id' => 0,
+                'bank_name' => '',
+                'bank_user_name' => '',
+                'bank_no' => '',
+                'created_at'=>date('Y-m-d H:i:s'),
+                'updated_at'=>date('Y-m-d H:i:s'),
+            ],
+        ]);
+    }
+}
